@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"></script>
+    <script src="products.js"></script>
+    <title>Document</title>
+</head>
+<body onload="getProducts()">
+
+    <center>
+        <h1>Product Billing</h1>
+        <br><br><br>
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <br>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+        <br><br><br><br>
+
+        <table class="table table-striped" id="product_table">
+            <thead>
+              <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Product Name</th>
+                <th scope="col">Description</th>
+                <th scope="col">Category</th>
+                <th scope="col">Sub-Category</th>
+                <th scope="col">Weight</th>
+                <th scope="col">Qty</th>
+                <th scope="col">Price</th>
+                <th scope="col">Purchase</th>
+              </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+          </table>
+
+          <br><br><br>
+          <h1>Invoice</h1>
+          <br><br>
+          
+        <table class="table table-striped" id="cart_table">
+          <thead>
+            <tr>
+              <th scope="col">Id</th>
+              <th scope="col">Product Name</th>
+              <th scope="col">Description</th>
+              <th scope="col">Quantityty</th>
+              <th scope="col">Price</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+
+        <b><span>Total Amount:</span><span id="totalAmount">0</span></b>
+        <br><br><br>
+        <button type="submit" onclick="checkOut()">Checkout</button>
+
+        </div>
+
+    </center>
+    
+
+
+</body>
+</html>
